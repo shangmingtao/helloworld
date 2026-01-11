@@ -232,8 +232,8 @@ if __name__ == "__main__":
     
     # 方法2：通过Agent调用
     # response = code_agent.invoke({"messages": [{"role": "user", "content": "查询 kpad盘点任务历史 业务的相关代码"}]})
-    response = code_agent.invoke({"messages": [{"role": "user", "content": "查询takingHistory方法代码,包括方法内部调用的其他方法，要完整呈现这部分代码"}]})
-    # response = code_agent.invoke({"messages": [{"role": "user", "content": "退出登录"}]})
+    # response = code_agent.invoke({"messages": [{"role": "user", "content": "查询takingHistory方法代码,包括方法内部调用的其他方法，要完整呈现这部分代码"}]})
+    response = code_agent.invoke({"messages": [{"role": "user", "content": "退出登录"}]})
     print(f"大模型返回 ====> {response}")
     print(response['messages'][-1].content)
     # # 6. Run

@@ -95,7 +95,8 @@ if __name__ == "__main__":
     
     # 替换为你的Java项目路径
     # java_project_path = r"C:\Users\shang\Desktop\项目\detective-demo2"
-    java_project_path = r"C:\Users\shang\Desktop\项目code\stock-shop-affair"
+    # java_project_path = r"C:\Users\shang\Desktop\项目code\stock-shop-affair"
+    java_project_path = r"/Users/milo/Desktop/detective/java/detective-demo"
 
     
     # 生成documents
