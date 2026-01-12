@@ -212,3 +212,6 @@ __marimo__/
 #default
 .DS_Store
 .idea/
+
+faiss_*.bin
+faiss_*.pkl

@@ -5,7 +5,7 @@
 每个tool内部调用对应的agent
 """
 import logging
-from typing import Dict, List, Optional
+from typing import Dict
 from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent
 from langchain.tools import tool

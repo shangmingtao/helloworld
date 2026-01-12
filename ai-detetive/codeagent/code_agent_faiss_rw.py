@@ -75,13 +75,13 @@ def save_documents_to_faiss(documents: List[Document]):
     index.add(vectors)
     
     # 保存索引到文件
-    index_file = "faiss_index.bin"
+    index_file = "../faiss_index.bin"
     faiss.write_index(index, index_file)
     print(f"FAISS索引已保存到: {index_file}")
     
     # 保存文档元数据 (可选，用于后续检索时获取原始文档)
     import pickle
-    metadata_file = "faiss_metadata.pkl"
+    metadata_file = "../faiss_metadata.pkl"
     with open(metadata_file, 'wb') as f:
         pickle.dump(documents, f)
     print(f"文档元数据已保存到: {metadata_file}")
@@ -96,9 +96,9 @@ if __name__ == "__main__":
     # 替换为你的Java项目路径
     # java_project_path = r"C:\Users\shang\Desktop\项目\detective-demo2"
     # java_project_path = r"C:\Users\shang\Desktop\项目code\stock-shop-affair"
-    java_project_path = r"/Users/milo/Desktop/detective/java/detective-demo"
+    # java_project_path = r"/Users/milo/Desktop/detective/java/detective-demo"
+    java_project_path = r"C:\Users\shang\Desktop\detective\java项目code\detective-demo"
 
-    
     # 生成documents
     print("正在生成documents...")
     documents = vectorize_java_project(java_project_path)
