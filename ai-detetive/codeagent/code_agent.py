@@ -7,8 +7,6 @@ import logging
 from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent
 from langchain.tools import tool
-import subprocess
-from prompts import get_code_agent_prompt
 
 # 配置日志
 logging.basicConfig(level=logging.INFO)
