@@ -8,7 +8,6 @@ from openai import OpenAI
 from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent
 from langchain.tools import tool
-from prompts import get_code_agent_prompt
 
 # 配置日志
 logging.basicConfig(level=logging.INFO)
@@ -204,8 +203,8 @@ if __name__ == "__main__":
     EMBEDDING_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
     
     # 配置FAISS文件路径
-    FAISS_INDEX_PATH = "faiss_index.bin"
-    FAISS_METADATA_PATH = "faiss_metadata.pkl"
+    FAISS_INDEX_PATH = "../faiss_index.bin"
+    FAISS_METADATA_PATH = "../faiss_metadata.pkl"
     
     # 初始化CodeAgent
     print("正在初始化CodeAgent...")
